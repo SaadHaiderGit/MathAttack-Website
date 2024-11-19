@@ -1,0 +1,54 @@
+body {
+    background-image: url("../images/numbers.png");
+    background-size: cover;
+    background-color: rgb(131, 192, 241);
+}
+
+img {
+    margin-top: -20px;
+}
+
+#header-text {
+    text-shadow: 1px 1px 2px white;
+    font-size: 3.6em;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(252, 53, 189);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(246, 248, 223);
+}
+
+a div {
+    width: 180px;
+    margin: 20px auto;
+    padding: 10px 5px;
+    border: 3px solid black;
+    border-radius: 12px;
+    background-color: rgb(28, 227, 55);
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+main {
+    padding: 1px 6% 10px;
+    background-color: rgb(131, 192, 241);
+    margin: 20px 12%;
+    min-height: 200px;
+    border: 3px solid black;
+    border-radius: 48px;
+    
+}
+
+#main-text {
+    font-size: 1.6em;
+    color:rgb(249, 249, 233);
+}
+
+

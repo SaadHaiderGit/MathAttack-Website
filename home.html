@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link type="text/css" rel="stylesheet" href="./styles/general.css"> 
+    <link type="text/css" rel="stylesheet" href="./styles/home.css"> 
+</head>
+
+<body>
+    <nav class="nav_menu hide">
+        <ul>
+            <li><a href="#" class="logout">Log Out</a></li>
+            <li><a href="#"" class="admin_access hide">Admin Panel</a></li>
+            <li class="lastitem">a</li>     
+        </ul>
+    </nav>
+
+
+    
+    <div id="homepage" class="page hide">
+        <main>
+            <header class="center">
+                <br>
+                <a href="./index.html"><img src="./images/logo.png"></a>
+                <br>
+            </header>
+            <aside class="main-box left-side">
+                <h2>Casual Modes</h2>
+                <p style="font-size: 100px;">&#128161;</p>
+                <a href="#" class="bottom"><div class="navigate_button">Enter</div></a>
+                <br>
+                <p><i>
+                    Pace yourself with simple questions and get familiar with basic mental math! For beginners and those 
+                    wanting to hone their general skills without pressure.
+                </i></p>
+                
+            </aside>
+
+            <div class="main-box center-side">
+                <h2>Ranked Modes</h2>
+                <p style="font-size: 100px;">&#129351;</p>
+                <a href="#" class="bottom"><div class="navigate_button">Enter</div></a>
+                <br>
+                <p><i>
+                    Fight for the leaderboard! Take on harder questions and compete with other users
+                    for the best score. For adepts who want to put their math skills to the test. 
+                </i></p>
+                
+            </div>
+
+            <aside class="main-box right-side">
+                <h2>Challenge Modes</h2>
+                <p style="font-size: 100px;">&#127942;</p>
+                <a href="#" class="bottom"><div class="navigate_button">Enter</div></a>
+                <br>
+                <p><i>
+                    Trials await you here! For the advanced mathematician, the most difficult math questions are here, 
+                    including a daily challenge! How far can you go?
+                </i></p>
+                
+            </aside>
+        </main>
+
+        <a href="#"><div class="leaderboard_button center">
+            <h2>Leaderboard</h2>
+        </div></a>
+        
+    </div>
+    
+
+
+    <div id="casual_page" class="page center hide">
+        <br>
+        <h1>Casual Modes</h1>
+        <br>
+        <div id="casual_mode_select">
+            <p>
+                Practice questions and learn your math equations. Casual Modes feature the easiest types of questions, along
+                with a generous timer. Take it easy and let your skills grow! (Scores and total time will NOT be recorded
+                in the leaderboards.)
+            </p>
+            <p>Select an operation type to focus on in the game by clicking one of the buttons below.</p>
+            <br>
+            <input type="button" class="game_enter_button add_color" value="Addition">
+            <input type="button" class="game_enter_button sub_color" value="Subtraction">
+            <input type="button" class="game_enter_button mult_color" value="Multiplication">
+            <input type="button" class="game_enter_button div_color" value="Division">
+            <input type="button" class="game_enter_button medley_color" value="Medley">
+            <input type="button" class="return_button" value="Go Back">
+        </div>
+        
+    </div>
+
+
+
+    <div id="ranked_page" class="page center hide">
+        <br>
+        <h1>Ranked Modes</h1>
+        <br>
+        <div id="ranked_mode_select">
+            <p>
+                Compete to get the best score possible. Ranked Modes feature a standard set of questions, and you'll need 
+                to be mindful of the timer. Stay quick on your feet! (Scores and total time will be recorded in the leaderboards.)
+            </p>
+            <p>Select an operation type to focus on in the game by clicking one of the buttons below.</p>
+            <br>
+            <input type="button" class="game_enter_button add_color" value="Addition">
+            <input type="button" class="game_enter_button sub_color" value="Subtraction">
+            <input type="button" class="game_enter_button mult_color" value="Multiplication">
+            <input type="button" class="game_enter_button div_color" value="Division">
+            <input type="button" class="game_enter_button medley_color" value="Medley">
+            <input type="button" class="return_button" value="Go Back">
+        </div>
+        
+    </div>
+
+
+
+    <div id="challenge_page" class="page center hide">
+        <br>
+        <h1>Challenge Modes</h1>
+        <br>
+        <div id="challenge_mode_select">
+            <p>
+                Prove your worth! Challenge Modes include a Standard Challenge with moderately difficult questions and a harsh
+                timer penalty, along with a Daily Challenge with five questions to answer as quickly as possible, with no strict 
+                time limit. You can only play the Daily Challenge once per day. Are you prepared? (Scores and total time will
+                be recorded in the leaderboards.)
+            </p>
+            <p>Select a challenge to focus on in the game by clicking one of the buttons below.</p>
+            <br>
+            <input type="button" class="game_enter_button challenge_color" value="Standard Challenge">
+            <input type="button" class="game_enter_button daily_color" value="Daily Challenge">
+            <input type="button" class="return_button" value="Go Back">
+        </div>
+        
+    </div>
+
+
+    
+    <div id="leaderboard" class="page center hide">
+        <h1 class="padding">Leaderboard</h1>
+        <p>Choose a section to see the current leaderboards.</p>
+        <input type="button" class="return_button" value="Go Back">
+        <div id="leaderboard_select">
+            <input type="button" class="select_table add_color" value="Addition">
+            <input type="button" class="select_table sub_color" value="Subtraction">
+            <input type="button" class="select_table mult_color" value="Multiplication">
+            <input type="button" class="select_table div_color" value="Division">
+            <input type="button" class="select_table medley_color" value="Medley">
+            <input type="button" class="select_table challenge_color" value="Std. Challenge">
+            <input type="button" class="select_table daily_color active_table" value="Daily Challenge">
+        </div>
+        <div id="leaderboard_name">
+            <p id="l_name"></p>
+        </div>
+        <div id="leaderboard_table"></div>
+    </div>
+    
+
+
+    <script src="./js/home.js"></script>
+</body>
+</html>

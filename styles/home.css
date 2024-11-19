@@ -1,0 +1,367 @@
+/* GENERAL */
+main, #casual_mode_select, #ranked_mode_select, #challenge_mode_select {
+    width: 80%;
+    padding: 0 10%;
+    display:inline-block;
+}
+
+.nav_menu {
+    background-color: #6a9eec;
+    height: 50px;
+    width: 100%;
+    position: static;
+    padding: 1px 0px;
+}
+
+.nav_menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0em 0.4em;
+}
+
+.nav_menu ul li {
+    float: right;
+    padding: 0px 1.2em 0px 1.2em;
+    border-left: gray 2px solid;
+}
+
+.nav_menu .lastitem {
+    border-left: none;
+    padding-left: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_menu a, .nav_menu li {
+    color: rgb(241, 238, 238);
+}
+
+.nav_menu a:hover {
+    color: white;
+}
+
+#return {
+    position: relative;
+}
+
+
+
+/*Main Home Page*/
+#homepage a {
+    color: rgb(114, 1, 114);
+    font-weight: bold;
+}
+
+#homepage a:hover {
+    color: rgb(189, 0, 189);
+}
+
+.main-box img {
+    display: block;
+    margin: auto;
+}
+
+.main-box {
+    text-align: center;
+    display:inline-block;
+    
+}
+
+.main-box p {
+    margin: 16px;   
+}
+
+.left-side {
+    width: 32%;
+    min-height: 440px;
+    max-height: 800px;
+    margin: 10px 0.5% 10px 0.5%;
+    float: left;
+    border: black solid 2px;
+    background-image: linear-gradient(
+        180deg,
+        rgb(202, 235, 202),
+        rgb(176, 227, 176),
+        rgb(176, 227, 176),
+        rgb(157, 240, 157),
+        rgb(135, 235, 135) 99%
+    );
+}
+
+.center-side {
+    width: 32%;
+    min-height: 440px;
+    max-height: 800px;
+    margin: 10px 0.5%;
+    float: left;
+    border: black solid 2px;
+    background-image: linear-gradient(
+        180deg,
+        rgb(234, 170, 183),
+        rgb(235, 140, 159),
+        rgb(235, 140, 159),
+        rgb(233, 100, 127),
+        rgb(232, 70, 102) 99%
+    );
+}
+
+.right-side {
+    width: 32%;
+    min-height: 440px;
+    max-height: 800px;
+    margin: 10px 0.5%;
+    float: left;
+    border: black solid 2px;
+    background-image: linear-gradient(
+        180deg,
+        rgb(247, 238, 188),
+        rgb(250, 235, 149),
+        rgb(250, 235, 149),
+        rgb(243, 225, 122),
+        rgb(241, 217, 78) 99%
+    );
+}
+
+.navigate_button {
+    min-width: 80px;
+    max-width: 180px;
+    margin: auto;
+    padding: 10px 5px;
+    border: 2px solid black;
+    background-color: rgb(185, 224, 224,  0.2);
+}
+
+.leaderboard_button {
+    width: 70%;
+    margin: 12px 15%;
+    height: 60px;
+    border: black solid 2px;
+    background-color: rgb(243, 221, 143);
+    background-image: linear-gradient(
+        180deg,
+        rgb(235, 227, 202),
+        rgb(227, 217, 176),
+        rgb(227, 217, 176),
+        rgb(240, 219, 157),
+        rgb(235, 200, 135) 99%
+    );
+}
+
+
+
+/* GAME MODES */
+#casual_mode_select p, #ranked_mode_select p, #challenge_mode_select p {
+    font-size: 18px;
+    padding: 0px 3%;
+}
+
+.game_enter_button, #casual_mode_select .return_button, #ranked_mode_select .return_button {
+    width: 160px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 16px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+#casual_mode_select .add_color, #ranked_mode_select .add_color {
+    background-image: linear-gradient(
+        180deg,
+        rgb(242, 205, 205),
+        rgb(246, 183, 183),
+        rgb(246, 183, 183),
+        rgb(239, 157, 157)
+        
+    );
+}
+
+#casual_mode_select .sub_color, #ranked_mode_select .sub_color {
+    background-image: linear-gradient(
+        180deg,
+        rgb(204, 249, 204),
+        rgb(183, 246, 183),
+        rgb(183, 246, 183),
+        rgb(162, 248, 162)
+    );
+}
+
+#casual_mode_select .mult_color, #ranked_mode_select .mult_color {
+    background-color: rgb(183, 224, 246);
+    background-image: linear-gradient(
+        180deg,
+        rgb(196, 228, 245),
+        rgb(183, 224, 246),
+        rgb(183, 224, 246),
+        rgb(153, 208, 238)
+    );
+}
+
+#casual_mode_select .div_color, #ranked_mode_select .div_color {
+    background-color: rgb(246, 222, 183);
+    background-image: linear-gradient(
+        180deg,
+        rgb(252, 232, 200),
+        rgb(246, 222, 183),
+        rgb(246, 222, 183),
+        rgb(238, 203, 146)
+    );
+}
+
+#casual_mode_select .medley_color, #ranked_mode_select .medley_color {
+    background-color: rgb(227, 183, 246);
+    background-image: linear-gradient(
+        180deg,
+        rgb(232, 201, 246),
+        rgb(227, 183, 246),
+        rgb(227, 183, 246),
+        rgb(217, 153, 245)
+    );
+}
+
+#challenge_mode_select .challenge_color {
+    width: 200px;
+    background-color: rgb(246, 244, 183);
+    background-image: linear-gradient(
+        180deg,
+        rgb(250, 248, 209),
+        rgb(246, 244, 183),
+        rgb(246, 244, 183),
+        rgb(239, 236, 158)
+    );
+}
+
+#challenge_mode_select .daily_color {
+    width: 200px;
+    background-color: rgb(249, 215, 22);
+    background-image: linear-gradient(
+        180deg,
+        rgb(255, 228, 72),
+        rgb(249, 215, 22),
+        rgb(249, 215, 22),
+        rgb(234, 200, 8)
+    );
+}
+
+#challenge_mode_select .return_button {
+    width: 200px;
+    height: 70px;
+    border-radius: 16px;
+    font-size: 18px;
+}
+
+
+
+
+/* LEADERBOARD */
+#leaderboard .return_button {
+    width: 160px;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: black;
+    background-image: linear-gradient(
+        180deg,
+        rgb(244, 242, 242),
+        rgb(228, 228, 228),
+        rgb(228, 228, 228),
+        rgb(205, 206, 205),
+        rgb(141, 141, 141) 99%
+    );
+}
+
+#leaderboard_select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#leaderboard_select .add_color {
+    background-color: rgb(246, 183, 183);
+}
+
+#leaderboard_select .sub_color {
+    background-color: rgb(183, 246, 183);
+}
+
+#leaderboard_select .mult_color {
+    background-color: rgb(183, 224, 246);
+}
+
+#leaderboard_select .div_color {
+    background-color: rgb(246, 222, 183);
+}
+
+#leaderboard_select .medley_color {
+    background-color: rgb(227, 183, 246);
+}
+
+#leaderboard_select .challenge_color {
+    background-color: rgb(246, 244, 183);
+}
+
+#leaderboard_select .daily_color {
+    background-color: rgb(249, 215, 22);
+}
+
+.select_table {
+    min-width: 120px;
+    max-width: 180px; 
+    padding: 10px 5px;
+    border-radius: 0px;
+    border: 4px double black;
+    cursor: pointer;
+}
+
+.select_table:hover {
+    border: 4px double yellow;
+}
+
+.active_table, .active_table:hover {
+    border: 4px double rgb(18, 198, 198);
+}
+
+#l_name {
+    margin: 40px 0px 0px;
+    font-size: 24px;
+}
+
+#leaderboard_table table {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 6px;
+    top: 50%;
+    left: 50%;
+    
+    text-align: center;
+    border: 4px solid black;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+#leaderboard_table th {
+    border: 2px solid black;
+    background-color: lightgray;
+    width: 120px;
+    font-size: 16px;
+    padding: 3px 3px;
+    margin: 0px;
+}
+
+#leaderboard_table td {
+    border: 2px solid black;
+    background-color: rgb(237, 231, 231);
+    width: 120px;
+    font-size: 13px;
+    padding: 3px 3px;
+    margin: 0px;
+}
+
+.no-table {
+    margin-top: 12px;
+}

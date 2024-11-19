@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link type="text/css" rel="stylesheet" href="./styles/general.css"> 
+    <link type="text/css" rel="stylesheet" href="./styles/login.css"> 
+</head>
+<body>
+    <header class="center hide">
+        <br>
+        <a href="./index.html"><img src="./images/logo.png"></a>
+        <br>
+        <h1>Login to MathAttack</h1>
+    </header>
+
+    <div id="loginbox" class="hide">
+        <p>
+            Provide your login information to access MathAttack and its contents. You cannot access MathAttack unless you have an
+            account and are logged in.
+        </p>
+        <br>
+        <label for='username'>Username:</label>
+        <input type='text' id='username'><br>
+        <label for='password'>Password:</label>
+        <input type='text' id='password'><br>
+        <br>
+        <br>
+        <div class="align">
+            <input type='button' id='login' value='Login'>
+            <br>
+            <input type="button" class="return_button" value="Go Back">
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background-color: #fcf6f2;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.custom_button {
+    background-color: white;
+}
+
+.return_button {
+    width: 160px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    background-image: linear-gradient(
+        180deg,
+        rgb(244, 242, 242),
+        rgb(228, 228, 228),
+        rgb(228, 228, 228),
+        rgb(205, 206, 205)
+    );
+}

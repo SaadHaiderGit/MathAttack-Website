@@ -1,0 +1,56 @@
+header img {
+    margin-top: 20px;
+	width: 500px;
+}
+label {
+    float: left;
+    width: 8em;
+}
+
+input { 
+    min-width: 180px;
+    width: 30%;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(143, 201, 232);
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(252, 248, 233);
+    cursor: pointer;
+}
+
+#login:hover {
+    color: white;
+}
+
+#loginbox {
+    min-width: 280px;
+    padding: 12px 36px 24px;
+    margin: 3em 16em;
+    background-color: aliceblue;
+    border: 2px solid #ccc;
+    border-radius: 1em;
+    font-size: 18px;
+}
+
+#return-div {
+    
+    padding: 0 20px;
+    width: 80%;
+}
+
+.return_button {
+    margin: 0 50%;
+}
