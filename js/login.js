@@ -1,3 +1,5 @@
+//PURPOSE: for login.html
+
 //check for logged in user, send directly to homepage if found
 console.log(localStorage.user);
 if (localStorage.user != "") {

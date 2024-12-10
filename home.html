@@ -77,17 +77,17 @@
         <br>
         <div id="casual_mode_select">
             <p>
-                Practice questions and learn your math equations. Casual Modes feature the easiest types of questions, along
-                with a generous timer. Take it easy and let your skills grow! (Scores and total time will NOT be recorded
+                Practice questions and learn your math equations. Casual Modes feature the simplest types of questions you'll 
+                ever find. Take it easy and let your skills grow! (Scores and total time will NOT be recorded
                 in the leaderboards.)
             </p>
             <p>Select an operation type to focus on in the game by clicking one of the buttons below.</p>
             <br>
-            <input type="button" class="game_enter_button add_color" value="Addition">
-            <input type="button" class="game_enter_button sub_color" value="Subtraction">
-            <input type="button" class="game_enter_button mult_color" value="Multiplication">
-            <input type="button" class="game_enter_button div_color" value="Division">
-            <input type="button" class="game_enter_button medley_color" value="Medley">
+            <input type="button" class="game_enter_button add_color" id="casual_addition" value="Addition">
+            <input type="button" class="game_enter_button sub_color" id="casual_subtraction" value="Subtraction">
+            <input type="button" class="game_enter_button mult_color" id="casual_multiplication" value="Multiplication">
+            <input type="button" class="game_enter_button div_color" id="casual_division" value="Division">
+            <input type="button" class="game_enter_button medley_color" id="casual_medley" value="Medley">
             <input type="button" class="return_button" value="Go Back">
         </div>
         
@@ -106,11 +106,11 @@
             </p>
             <p>Select an operation type to focus on in the game by clicking one of the buttons below.</p>
             <br>
-            <input type="button" class="game_enter_button add_color" value="Addition">
-            <input type="button" class="game_enter_button sub_color" value="Subtraction">
-            <input type="button" class="game_enter_button mult_color" value="Multiplication">
-            <input type="button" class="game_enter_button div_color" value="Division">
-            <input type="button" class="game_enter_button medley_color" value="Medley">
+            <input type="button" class="game_enter_button add_color" id="ranked_addition" value="Addition">
+            <input type="button" class="game_enter_button sub_color" id="ranked_subtraction" value="Subtraction">
+            <input type="button" class="game_enter_button mult_color" id="ranked_multiplication" value="Multiplication">
+            <input type="button" class="game_enter_button div_color" id="ranked_division" value="Division">
+            <input type="button" class="game_enter_button medley_color" id="ranked_medley" value="Medley">
             <input type="button" class="return_button" value="Go Back">
         </div>
         
@@ -124,15 +124,14 @@
         <br>
         <div id="challenge_mode_select">
             <p>
-                Prove your worth! Challenge Modes include a Standard Challenge with moderately difficult questions and a harsh
-                timer penalty, along with a Daily Challenge with five questions to answer as quickly as possible, with no strict 
+                Prove your worth! Challenge Modes include a Standard Challenge with moderately difficult questions, along with a Daily Challenge with five questions to answer as quickly as possible, with no strict 
                 time limit. You can only play the Daily Challenge once per day. Are you prepared? (Scores and total time will
                 be recorded in the leaderboards.)
             </p>
             <p>Select a challenge to focus on in the game by clicking one of the buttons below.</p>
             <br>
-            <input type="button" class="game_enter_button challenge_color" value="Standard Challenge">
-            <input type="button" class="game_enter_button daily_color" value="Daily Challenge">
+            <input type="button" class="game_enter_button challenge_color" id="challenge_standard" value="Standard Challenge">
+            <input type="button" class="game_enter_button daily_color" id="challenge_daily" value="Daily Challenge">
             <input type="button" class="return_button" value="Go Back">
         </div>
         
@@ -161,6 +160,6 @@
     
 
 
-    <script src="./js/home.js"></script>
+    <script type="module" src="./js/home.js"></script>
 </body>
 </html>

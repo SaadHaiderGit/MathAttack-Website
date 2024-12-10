@@ -1,0 +1,138 @@
+/* GENERAL */
+body {
+    background-color: #f9ebe3;
+}
+
+label {
+    float: left;
+    width: 4em;
+}
+
+input { 
+    width: 280px;
+    margin-bottom: 0.3em;
+}
+
+#input-section {
+    text-align: left;
+}
+
+
+/* LEADERBOARD */
+#leaderboard .return_button {
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+
+#leaderboard_select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#leaderboard_select .add_color {
+    background-color: rgb(246, 183, 183);
+}
+
+#leaderboard_select .sub_color {
+    background-color: rgb(183, 246, 183);
+}
+
+#leaderboard_select .mult_color {
+    background-color: rgb(183, 224, 246);
+}
+
+#leaderboard_select .div_color {
+    background-color: rgb(246, 222, 183);
+}
+
+#leaderboard_select .medley_color {
+    background-color: rgb(227, 183, 246);
+}
+
+#leaderboard_select .challenge_color {
+    background-color: rgb(246, 244, 183);
+}
+
+#leaderboard_select .daily_color {
+    background-color: rgb(249, 215, 22);
+}
+
+.select_table {
+    min-width: 120px;
+    max-width: 180px; 
+    padding: 10px 5px;
+    border-radius: 0px;
+    border: 4px double black;
+    cursor: pointer;
+}
+
+.select_table:hover {
+    border: 4px double yellow;
+}
+
+.active_table, .active_table:hover {
+    border: 4px double rgb(18, 198, 198);
+}
+
+#l_name {
+    margin: 40px 0px 0px;
+    font-size: 24px;
+}
+
+#leaderboard_table table {
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 6px;
+    top: 50%;
+    left: 50%;
+    
+    text-align: center;
+    border: 4px solid black;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+#leaderboard_table th {
+    border: 2px solid black;
+    background-color: lightgray;
+    width: 120px;
+    font-size: 16px;
+    padding: 3px 3px;
+    margin: 0px;
+}
+
+#leaderboard_table td {
+    border: 2px solid black;
+    background-color: rgb(237, 231, 231);
+    width: 120px;
+    font-size: 13px;
+    padding: 3px 3px;
+    margin: 0px;
+}
+
+.no-table {
+    margin-top: 12px;
+}
+
+
+
+/* Buttons */
+.command_button {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+    background-image: linear-gradient(
+        180deg,
+        rgb(244, 242, 242),
+        rgb(228, 228, 228),
+        rgb(228, 228, 228),
+        rgb(205, 206, 205)
+    );
+}

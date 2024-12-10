@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casual Division Game</title>
+    <link type="text/css" rel="stylesheet" href="../styles/general.css"> 
+    <link type="text/css" rel="stylesheet" href="../styles/game.css"> 
+
+</head>
+<body>
+    <div id="container" class="hide center">
+        <div id="starting-menu" class="">
+            <h1 id="game-id">Casual Mode - Division</h1>
+            <p id="starting-text">
+                Welcome to the game! Solve questions as fast as you can and aim for a high score. 
+                Each correct question earns you a point and gives you some time back, and each incorrect question makes you lose time.
+                The game ends if your time hits 0. 
+                <br>
+                <br>
+                It is expected that you will not use calculators when playing. Please refrain from using them,
+                as they take away from the experience of the game.
+                <br>
+                <br>
+                When you are ready, click "Start Game" to begin. If you wish to play a different mode, click "Go Back".
+            </p>
+            <br>
+            <div id="starting-buttons" class="">
+                <input type="button" id="startgame_button" value="Start Game">
+                <br>
+                
+                <input type="button" class="return_button" value="Go Back">
+            </div>
+        </div>
+
+        <div id="main-content" class="hide">
+            <div id="value-display" class="">
+                <p id="score">SCORE: 0</p>
+                <p id="time-left">TIME LEFT: 0</p>
+            </div>
+            <div id="daily-time-display" class="hide">
+                <p id="curr_question">QUESTION: 0</p>
+                <p id="time-total">TIME SPENT: 0</p>
+            </div>
+
+            <p id="equation">This text shouldn't appear</p>
+            <div id="answer-box" class="">
+                <input type='text' id='answer-input'><input type="button" id="submit_button" value="Enter">
+            </div>
+            <br>
+            <div id="correct-text" class="correct-color hide">
+                <p>Correct! +1 score, and +15 to time left.</p>
+            </div>
+            <div id="invalid-text" class="invalid-color hide">
+                <p>Please input a number value for your answer.</p>
+            </div>
+            <div id="incorrect-text" class="incorrect-color hide">
+                <p>Wrong answer. -5 to time left.</p>
+            </div>
+            <div id="warning-text" class="hide">
+                <p>After this question, -1 to time gained per correct answer, and -1 to time left per wrong answer!</p>
+            </div>
+        </div>
+
+        <div id="end-menu" class="hide">
+            <h1 id="game-over-text">TIME'S UP!</h1>
+            <p id="evaluation-results">
+                Final Score - <u>0</u>
+                <br>
+                Total Time - <u>0:00</u> 
+            </p>
+            <p id="evaluation-text" class="">
+                This text shouldn't appear! It will be updated by game.js.
+            </p>
+            <br>
+            <p id="postgame-text">
+                Want to have another attempt? Click "Replay Game" to start a new round. 
+                Or click on "Go Back" to return to the home page.
+            </p>
+            <br>
+            <div id="end-buttons" class="">
+                <input type="button" id="replaygame_button" value="Replay Game">
+                <br>
+                
+                <input type="button" class="return_button" value="Go Back">
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="../js/game.js"></script>
+</body>
+</html>

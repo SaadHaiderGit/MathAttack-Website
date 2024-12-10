@@ -1,6 +1,7 @@
-//we could make this an imported function, you know. Export it! Try it! 
+//PURPOSE: for home.html
+import { check_date } from "./daily.js";
 
-//Initialize global values and username info
+//Initialize global values and username info, also update daily challenge if needed
 let curr_table = "Daily Challenge";
 let user_info = localStorage.user ?? "";
 if (user_info == "") {
@@ -10,8 +11,10 @@ if (user_info == "") {
 else {
     user_info = JSON.parse(user_info);
     //console.log(user_info);
+    check_date();
     document.querySelector(".nav_menu").classList.remove("hide");
     document.querySelector("#homepage").classList.remove("hide");
+    
 }
 
 
@@ -23,8 +26,7 @@ document.querySelector(".lastitem").textContent = `Logged in as: ${user_info['us
 if (user_info['isAdmin'] == 1) {
     admin_access.classList.remove("hide");
     admin_access.addEventListener("click", evt => {
-        alert("Page is a work in progress.")
-        //document.location.href = './login.html';
+        document.location.href = './admin.html';
         evt.preventDefault();
     });
 }
@@ -40,7 +42,7 @@ document.querySelector(".logout").addEventListener("click", evt => {
 //handle page switching
 const pages = document.querySelectorAll(".page");
 const page_switch = (page) => {
-    for (p of pages) {
+    for (let p of pages) {
         p.classList.add("hide");
     }
     page.classList.remove("hide");
@@ -53,16 +55,16 @@ document.querySelector(".leaderboard_button").addEventListener("click", evt => {
     evt.preventDefault();
 });
 
-for (return_button of document.querySelectorAll(".return_button")) {
+for (let return_button of document.querySelectorAll(".return_button")) {
     return_button.addEventListener("click", evt => {
         page_switch(document.querySelector("#homepage"));
         evt.preventDefault();
     });
 }
 
-for (navigate_button of document.querySelectorAll(".navigate_button")) {
+for (let navigate_button of document.querySelectorAll(".navigate_button")) {
     navigate_button.addEventListener("click", evt => {
-        page_type = evt.currentTarget.closest(".main-box");
+        let page_type = evt.currentTarget.closest(".main-box");
         if (page_type.classList.contains("left-side")) {
             page_switch(document.querySelector("#casual_page"));
         }
@@ -79,10 +81,9 @@ for (navigate_button of document.querySelectorAll(".navigate_button")) {
     });
 }
 
-for (game_enter_button of document.querySelectorAll(".game_enter_button")) {
+for (let game_enter_button of document.querySelectorAll(".game_enter_button")) {
     game_enter_button.addEventListener("click", evt => {
-        alert("Gamemodes are a work in progress.")
-        //will use evt.currentTarget here to get value, send it to next page
+        document.location.href = `./game_pages/${evt.currentTarget.id}.html`;
     });
 }
 
@@ -145,12 +146,12 @@ const show_table = async (table_value) => {
         }
     );
 
-    resp_data = await response.json();
+    let resp_data = await response.json();
     //console.log(resp_data);
 
     //table_display
     if (resp_data.length != 0 && resp_data != false) {
-        table_html = `<table class="table center">
+        let table_html = `<table class="table center">
                         <tr>
                             <th>Rank</th>
                             <th>Username</th>
@@ -158,7 +159,7 @@ const show_table = async (table_value) => {
                             <th>Time</th>
                         </tr>`;
                         
-        for (i in resp_data) {
+        for (let i in resp_data) {
             table_html +=   `<tr>
                             <td>#${parseInt(i)+1}</td>
                             <td>${resp_data[i][0]}</td>
@@ -176,7 +177,7 @@ const show_table = async (table_value) => {
 }
 
 const tables = document.querySelectorAll(".select_table");
-for (table of tables) {
+for (let table of tables) {
     table.addEventListener("click", evt => {
         document.querySelector(".active_table").classList.remove("active_table");
         evt.currentTarget.classList.add("active_table");

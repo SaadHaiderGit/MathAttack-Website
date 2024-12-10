@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Challenge Game</title>
+    <link type="text/css" rel="stylesheet" href="../styles/general.css"> 
+    <link type="text/css" rel="stylesheet" href="../styles/game.css"> 
+
+</head>
+<body>
+    <div id="container" class="hide center">
+        <div id="starting-menu" class="">
+            <h1 id="game-id">Challenge Mode - Daily</h1>
+            <p id="starting-text" class="">
+                <i>Loading system and game records...</i>
+            </p>
+            <br>
+            <div id="starting-buttons" class="">
+                <input type="button" id="startgame_button" class="hide" value="Start Game">
+                <br>
+                
+                <input type="button" class="return_button" value="Go Back">
+            </div>
+        </div>
+
+        <div id="main-content" class="hide">
+            <div id="value-display" class="hide">
+                <p id="score">SCORE: 0</p>
+                <p id="time-left">TIME LEFT: 0</p>
+            </div>
+            <div id="daily-time-display" class="">
+                <p id="curr_question">QUESTION: 1</p>
+                <p id="time-total">TIME SPENT: 0</p>
+            </div>
+
+            <p id="equation">This text shouldn't appear</p>
+            <div id="answer-box" class="">
+                <input type='text' id='answer-input'><input type="button" id="submit_button" value="Enter">
+            </div>
+            <br>
+            <div id="correct-text" class="correct-color hide">
+                <p>Correct! +1 score, and +15 to time left.</p>
+            </div>
+            <div id="invalid-text" class="invalid-color hide">
+                <p>Please input a number value for your answer.</p>
+            </div>
+            <div id="incorrect-text" class="incorrect-color hide">
+                <p>Wrong answer. -5 to time left.</p>
+            </div>
+            <div id="warning-text" class="hide">
+                <p>After this question, -1 to time gained per correct answer, and -1 to time left per wrong answer!</p>
+            </div>
+        </div>
+
+        <div id="end-menu" class="hide">
+            <h1 id="game-over-text">THAT'S ALL THE QUESTIONS!</h1>
+            <p id="evaluation-results">
+                Final Score - <u>0/5</u>
+                <br>
+                Total Time - <u>0:00</u> 
+            </p>
+            <p id="evaluation-text" class="">
+                This text shouldn't appear! It will be updated by game.js.
+            </p>
+            <br>
+            <p id="postgame-text">
+                Come again tomorrow to have another go at the daily challenge! Click on "Go Back" to return to the home page.
+            </p>
+            <br>
+            <div id="end-buttons" class="">
+                <input type="button" id="replaygame_button" class="hide" value="Replay Game">
+                <br>
+                
+                <input type="button" class="return_button" value="Go Back">
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="../js/game.js"></script>
+</body>
+</html>

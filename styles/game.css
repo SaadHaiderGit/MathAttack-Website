@@ -1,0 +1,72 @@
+#container {
+    width: 68%;
+    padding: 40px 16% 0px;
+    font-size: 24px;
+
+}
+
+#equation {
+    font-size: 80px;
+    padding: 0px;
+    margin: 70px 0px 50px;
+}
+
+#answer-input {
+    width: 200px;
+    padding: 10px 10px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin: 0px 0px;
+    font-size: 18px;
+    color: black;
+}
+
+.correct-color {
+    color: rgb(149, 220, 43);
+}
+
+.invalid-color {
+    color: rgb(255, 196, 2);
+}
+
+.incorrect-color {
+    color: crimson;
+}
+
+#warning-text {
+    color: gold;
+}
+
+#submit_button {
+    width: 70px;
+    padding: 10px 0px;
+    border-radius: 0px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    background-color: gray;
+}
+
+#startgame_button, #replaygame_button {
+    width: 240px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: black;
+    background-image: linear-gradient(
+        180deg,
+        rgb(238, 250, 209),
+        rgb(227, 246, 183),
+        rgb(224, 246, 183),
+        rgb(213, 239, 158)
+    );
+}
+
+.return_button {
+    width: 200px;
+    padding: 10px;
+    font-size: 22px;
+   
+}

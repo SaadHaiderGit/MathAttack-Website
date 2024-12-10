@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link type="text/css" rel="stylesheet" href="./styles/general.css"> 
+        <link type="text/css" rel="stylesheet" href="./styles/admin.css"> 
+    </head>
+
+    <body>
+        <div id="container" class="hide center">
+
+            <div id="leaderboard" class="center">
+                <br>
+                <h1 class="padding">Admin Panel</h1>
+                <p>Choose a leaderboard to see its values, then modify it as needed using the inputs below.</p>
+                <input type="button" class="return_button" value="Go Back">
+                <div id="leaderboard_select">
+                    <input type="button" class="select_table add_color" value="Addition">
+                    <input type="button" class="select_table sub_color" value="Subtraction">
+                    <input type="button" class="select_table mult_color" value="Multiplication">
+                    <input type="button" class="select_table div_color" value="Division">
+                    <input type="button" class="select_table medley_color" value="Medley">
+                    <input type="button" class="select_table challenge_color" value="Std. Challenge">
+                    <input type="button" class="select_table daily_color active_table" value="Daily Challenge">
+                </div>
+                <div id="leaderboard_name">
+                    <p id="l_name"></p>
+                </div>
+                <div id="leaderboard_table"></div>
+            </div>
+            <br>
+            <br>
+            
+            <section id="input-section" style="display: grid; justify-content: center; grid-template-columns: auto auto;">
+                <label for="user">User: </label>
+                    <input type="text" id="user">
+                <label for="score">Score:</label>
+                    <input type="text" id="score">
+                <label for="time">Time:</label>
+                    <input type="text" id="time">
+            </section>
+            <br>
+
+            <div>
+                <section>
+                    <button id="add" class="command_button">Add</button>
+                    <button id="update" class="command_button">Update</button>
+                    <button id="delete" class="command_button">Delete</button>
+                </section>
+                <section id="notify"></section>
+            </div>
+
+        </div>
+
+        <script type="module" src="./js/admin.js"></script>
+    </body>
+</html>
