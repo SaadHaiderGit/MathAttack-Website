@@ -148,6 +148,7 @@ const str_warning = document.querySelector("#warning-text");
 const str_evaluation = document.querySelector("#evaluation-text");
 
 let score = 0;
+let clock = null;
 let time_left = 30;
 let time_left_cap = 30;
 
@@ -247,7 +248,7 @@ const startgame = () => {
 
 //set time interval for counting down time, and to track total time
 const time_log = () => {
-    let clock = null;
+    clock = null;
     clock = setInterval(() => {
         if (game_active && time_left > 0) {
             total_time_seconds++;
@@ -357,6 +358,7 @@ const submit_daily_check = () => {
 const game_stop = () => {
     if (game_active) {
         game_active = false;
+        clearInterval(clock);
         let max_score = "";
         if (game_type == "daily") {
             max_score = "/5";
