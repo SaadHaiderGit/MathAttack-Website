@@ -16,11 +16,11 @@ Your server will run on your specified port. For accessing the website, you can 
 
 ![image](https://github.com/SaadHaiderGit/ReactDonutShop/assets/118562950/46a93920-3e1b-461a-a8e4-a0e9a9d5db3f)
 
-Download the Github repository and save it in xampp\htdocs\Projects. Then access phpMyAdmin through your port (e.g.: 127.0.0.1/phpmyadmin/). In phpMyAdmin, you will need to import the mathattack.sql file in order to make full use of the MathAttack website; you can do this by clicking on "Import" at the top navigation menu, then choosing the sql file to import. After that, click on the Import button at the bottom of the menu, and your SQL database should be good to go.  
+Download the Github repository and save it in xampp\htdocs\Projects. Then access phpMyAdmin through your port (e.g.: http://127.0.0.1/phpmyadmin/). In phpMyAdmin, you will need to import the mathattack.sql file in order to make full use of the MathAttack website; you can do this by clicking on "Import" at the top navigation menu, then choosing the sql file to import. After that, click on the Import button at the bottom of the menu, and your SQL database should be good to go.  
 
 ## Usage
 
-To access the actual website, start running your XAMPP server, then access the landing page. I use the following link: 127.0.0.1/projects/MathAttack-Website/
+To access the actual website, start running your XAMPP server, then access the landing page. I use the following link: http://127.0.0.1/projects/MathAttack-Website/
 
 I have yet to implement a registration feature for the website, but you can use the following username & password combinations to login to the website:
 
