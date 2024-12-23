@@ -278,7 +278,7 @@ document.querySelector("#add").addEventListener("click", evt => {
         leaderboard_check("save");
     }
     else {
-
+        str_notify.innerHTML = `<p>"All above input values needed to access this command.</p>`;
     }
     
 }); 
@@ -288,12 +288,17 @@ document.querySelector("#update").addEventListener("click", evt => {
         leaderboard_check("update");
     }
     else {
-
+        str_notify.innerHTML = `<p>"All above input values needed to access this command.</p>`;
     }
 }); 
 
 document.querySelector("#delete").addEventListener("click", evt => {
-    leaderboard_check("delete");
+    if (user_input.value != "") {
+        leaderboard_check("delete");
+    }
+    else {
+        str_notify.innerHTML = `<p>"User value needed to access this command.</p>`;
+    }
 }); 
 
 
