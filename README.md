@@ -20,7 +20,7 @@ Download the Github repository and save it in xampp\htdocs\Projects. Then access
 
 ## Usage
 
-To access the actual website, start running your XAMPP server, then access the index.html file. I use the following link: http://localhost:8080/projects/MathAttack-Website/index.html
+To access the actual website, start running your XAMPP server, then access the landing page. I use the following link: 127.0.0.1/projects/MathAttack-Website/
 
 I have yet to implement a registration feature for the website, but you can use the following username & password combinations to login to the website:
 
