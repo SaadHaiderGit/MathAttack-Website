@@ -55,7 +55,6 @@ const show_table = async (table_value) => {
         }
 
     let leaderboard_name = document.querySelector("#l_name");
-    console.log(leaderboard_name)
     if (table_value == "Std. Challenge") {
         leaderboard_name.textContent = `Standard Challenge`;
     }
@@ -63,8 +62,8 @@ const show_table = async (table_value) => {
         leaderboard_name.textContent = `${table_value}`;
         
     }
-    console.log(leaderboard_name);
-    console.log(table_name);
+    //console.log(leaderboard_name);
+    //console.log(table_name);
     curr_table = table_value;
     const table_display = document.querySelector("#leaderboard_table");
     
@@ -138,7 +137,7 @@ const leaderboard_save = async () => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
     show_table(document.querySelector(".active_table").value);
 
     
@@ -166,7 +165,7 @@ const leaderboard_update = async () => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
     show_table(document.querySelector(".active_table").value);
 }
 
@@ -190,7 +189,7 @@ const leaderboard_delete = async () => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
     show_table(document.querySelector(".active_table").value);
 }
 
@@ -218,7 +217,7 @@ const leaderboard_check = async (function_type="none") => {
     if (!user_leaderboard_info) {
         user_leaderboard_info = "empty";
     }
-    console.log(user_leaderboard_info);
+    //console.log(user_leaderboard_info);
 
 
     if (function_type == "save") {

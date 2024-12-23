@@ -4,7 +4,7 @@ import { generateEquation } from "./equation_gen.js";
 
 //Check if logged in
 if (localStorage.user == "") {
-    console.log("AA")
+    //console.log("AA")
     document.location.href = '../login.html';
 }
 else {
@@ -18,7 +18,7 @@ const leaderboard_check = async (flag='none') => {
     if (flag == 'daily_check' && game_type == "daily") {        //for daily challenge, check date (update challenge if needed)
         await check_date(".");
         daily_bank = await extract_questions();
-        console.log(daily_bank);
+        //console.log(daily_bank);
     }
     const response = await fetch(
         "../backend/game.php",
@@ -40,7 +40,7 @@ const leaderboard_check = async (flag='none') => {
     if (!user_leaderboard_info) {
         user_leaderboard_info = "empty";
     }
-    console.log(user_leaderboard_info);
+    //console.log(user_leaderboard_info);
     if (flag == 'daily_check' && game_type == "daily") {                //for daily challenge, configure text and game access
         const start_text = document.querySelector("#starting-text");
         if (user_leaderboard_info != "empty") {
@@ -85,7 +85,7 @@ const leaderboard_save = async () => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
 }
 
 const leaderboard_update = async () => {
@@ -107,7 +107,7 @@ const leaderboard_update = async () => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
 }
 
 
@@ -123,8 +123,8 @@ if (game_type == "standard") {
     game_type = 'challenge';        //refer to standard challenge as simply 'challenge'
 }
 
-console.log(gamemode);
-console.log(game_type);
+//console.log(gamemode);
+//console.log(game_type);
 
 let daily_bank = "";
 let question = 1;
@@ -277,7 +277,7 @@ const next_equation = () => {
 
     let equation = generateEquation(gamemode, game_type);
     answer = eval(equation);
-    console.log(equation + "  ==>  " + answer);
+    //console.log(equation + "  ==>  " + answer);
     //console.log(str_equation)
     str_equation.textContent = equation;
 }
@@ -292,7 +292,7 @@ const next_daily_equation = () => {
     else {
         let equation = daily_bank[question-1]["question"];
         answer = eval(equation);
-        console.log(equation + "  ==>  " + answer);
+        //console.log(equation + "  ==>  " + answer);
         //console.log(str_equation)
         str_equation.textContent = equation;
     }

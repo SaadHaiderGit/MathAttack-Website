@@ -118,7 +118,7 @@ const show_table = async (table_value) => {
         }
 
     let leaderboard_name = document.querySelector("#l_name");
-    console.log(leaderboard_name)
+    //console.log(leaderboard_name)
     if (table_value == "Std. Challenge") {
         leaderboard_name.textContent = `Standard Challenge`;
     }
@@ -126,7 +126,7 @@ const show_table = async (table_value) => {
         leaderboard_name.textContent = `${table_value}`;
         
     }
-    console.log(leaderboard_name);
+    //console.log(leaderboard_name);
     curr_table = table_value;
     const table_display = document.querySelector("#leaderboard_table");
     

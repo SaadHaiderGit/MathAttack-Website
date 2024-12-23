@@ -17,7 +17,7 @@ const refresh_daily_leaderboard = async (location="") => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
 }
 
 
@@ -40,7 +40,7 @@ const update_daily_questions = async (id, question, location="") => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
 }
 
 
@@ -62,7 +62,7 @@ const update_date = async (date, location="") => {
     );
 
     let resp_data = await response.json();
-    console.log(resp_data);
+    //console.log(resp_data);
 }
 
 
@@ -70,7 +70,7 @@ const update_date = async (date, location="") => {
 //Check the date and compare it; on a new day, change the challenge and refresh the leaderboard
 const check_date = async (location="") => {
     let date = new Date;
-    console.log(date.toUTCString());
+    //console.log(date.toUTCString());
     let curr_date = date.toUTCString().split(" ").splice(1,3).join(" ");
 
     const response = await fetch(
@@ -90,16 +90,16 @@ const check_date = async (location="") => {
     let old_date = await response.json();
 
 
-    console.log(old_date['date']);
-    console.log(curr_date);
-    console.log(old_date['date'] == curr_date);
+    //console.log(old_date['date']);
+    //console.log(curr_date);
+    //console.log(old_date['date'] == curr_date);
     //console.log(generateEquation("challenge", "daily"));
 
     if (old_date['date'] != curr_date) {
         await refresh_daily_leaderboard(location);
         for (let i = 0; i < 5; i++) {
             let new_question = generateEquation("challenge", "daily");
-            console.log(new_question);
+            //console.log(new_question);
             await update_daily_questions(i+1, new_question, location);
         }
         update_date(curr_date, location);

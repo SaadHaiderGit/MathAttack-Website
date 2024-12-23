@@ -14,9 +14,6 @@ const multNumGen = (numbers, operations, num_cap, mult_and_div_cap) => {
         numbers[numbers.length - 1] = x;
     
     }
-    else if (operations[numbers.length - 3] == "/") {
-        console.log("GOT EM");
-    }
 }
 
 const divNumGen = (numbers, num_cap, mult_and_div_cap) => {
@@ -39,7 +36,7 @@ const divNumGen = (numbers, num_cap, mult_and_div_cap) => {
     if (divisors.length == 0) {
         divisors.push(1, prev_num);
     }
-    console.log(divisors);
+    //console.log(divisors);
     let divisor = divisors[Math.floor(Math.random() * divisors.length)];
     numbers.push(divisor);
 

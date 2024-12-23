@@ -2,7 +2,7 @@
 
 //check for logged in user, send directly to homepage if found
 let user_info = localStorage.user ?? "";
-console.log(user_info);
+//console.log(user_info);
 if (user_info != "") {
     document.location.href = './home.html';
 }
