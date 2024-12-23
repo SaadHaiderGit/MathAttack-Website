@@ -2,7 +2,7 @@
     //Used by daily.js, whenever someone navigates the site and the daily challenge needs to be updated
 
     header("Content-Type:application/json");
-    $dsn = "mysql:host=localhost:8080;dbname=mathattack";
+    $dsn = "mysql:host=localhost;dbname=mathattack";
     $username = "phpuser";
     $password = "pa55word";
 
